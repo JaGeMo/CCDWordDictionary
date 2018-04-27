@@ -1,0 +1,13 @@
+﻿@model WordDictionary.Models.InputText
+
+@{
+    ViewBag.Title = "Dictionary";
+    Layout = "_SpecLayout";
+}
+
+<h2>Dictionary</h2>
+
+<form asp-action="Index" asp-controller="WordDictionary">
+    <input asp-for="InputTextString" placeholder="&nbsp;please enter a text here ..&nbsp;"/> <br/><br/>
+    <input type="submit" />
+</form>
